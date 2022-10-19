@@ -123,16 +123,26 @@ p {
 .button:hover {
     cursor: default;
     transform: scale(1.1);
-    background: linear-gradient(to right,#004d73, #004d73);
+    background: linear-gradient(to right,#095f8a, #004d73);
 }
 .button:active {
     transform: scale(.6);
-    background: linear-gradient(to right,#004d73, #004d73);
+    background: linear-gradient(to right,#095f8a, #004d73);
 }
 .button a {
     color: white;
     text-decoration: none;
     cursor: default;
+}
+
+
+
+.legal-stuff {
+    font-size: 12px;
+    text-align: right;
+    background-color: #004d73;
+    padding: 10px;
+    color: white;
 }
 
 
@@ -165,6 +175,7 @@ p {
     }
     .title-p {
         margin-top: 20px;
+        font-size: 16px;
     }
     
     .normal-section {

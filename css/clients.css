@@ -91,7 +91,7 @@
 }
 .testimonial p{
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 16px;
     transition: .5s;
     align-items: left;
 }
@@ -136,7 +136,7 @@
         font-size: 28px;
     }
     .testimonial p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
