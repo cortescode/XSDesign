@@ -1,0 +1,34 @@
+.banner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    margin-top: 120px;
+    min-height: 360px;
+}
+.banner-content {
+    display: block;
+}
+.banner-visuals {
+    display: flex;
+    justify-content: right;
+    max-width: 100vw;
+    perspective: 1000px;
+}
+.banner-img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 40px 60px -10px;
+    perspective: 1000px;
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner-visuals {
+        margin-top: 60px;
+    }
+    .banner-img {
+        width: 80%;
+    }
+}

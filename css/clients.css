@@ -1,0 +1,142 @@
+.clients {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    place-items: center;
+    margin-top: 80px;
+}
+
+.reviews-selection {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.reviews-selection:nth-child(1) button {
+    grid-column-end: 1;
+    grid-row-end: 1;
+}
+.reviews-circles {
+    display: flex;
+    grid-row-end: 1;
+}
+.reviews-selection:nth-child(3) button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 1;
+}
+
+.reviews-circle {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 10px 0px;
+    z-index: 10;
+    transition: .2s;
+}
+
+.clients button{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    grid-row-end: 1;
+    background-color: transparent;
+}
+
+.clients button img {
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    transition: .2s;
+}
+.clients button img:hover{
+    transform: scale(1.2);
+}
+.clients button img:active {
+    transform: scale(.6);
+}
+.client-review {
+    display: grid;
+    grid-row-end: 1;
+    height: 320px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    perspective: 1000px;
+
+    transition: .2s;
+}
+.client-review-animation {
+    transform: scale(.8);
+
+    transition: .2s;
+}
+
+.client-review-animation .testimonial {
+    opacity: 0;
+
+    transition: .2s;
+}
+
+.testimonial {
+    padding: 40px;
+    padding-bottom: 20px;
+}
+.testimonial p{
+    margin: 20px 0;
+    font-size: 14px;
+    transition: .5s;
+    align-items: left;
+}
+
+
+.testimonial-person {
+    border-radius: 50%;
+    width: 80px;
+    aspect-ratio: 1;
+    border: 1px solid #00334e;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.testimonial-web {
+    width: 98%;
+    margin: 1%;
+    border-radius: 8px;
+}
+
+.vertical-flip {
+    transform: rotateZ(180deg);
+}
+
+
+
+@media (max-width: 600px) and (orientation: portrait){
+    .clients {
+        max-width: 100%;
+    }
+    .client-review {
+        aspect-ratio: 1;
+        height: 88vw;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+    }
+    .testimonial {
+        padding: 28px;
+        text-align: left;
+    }
+    .testimonial h3{
+        font-size: 28px;
+    }
+    .testimonial p {
+        font-size: 18px;
+    }
+
+}

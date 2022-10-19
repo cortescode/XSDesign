@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cmarketing - Agencia de Diseño web Almería</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/clients.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+<body>
+    <div class="full-page-containter">
+        <!--HEADER-->
+        <header>
+            <div class="header-wrapper">
+                <a href="#" class="logo-wrapper">
+                    <img class="header-logo" src="assets/xsmarketing-logo.png"></img>
+                </a>
+                <div class="menu-wrapper">
+                    <button onclick="openCloseMenu()" class="menu-button">
+                        <canvas id="toggle-menu-canvas" width="20" height="20"></canvas>
+                    </button>
+                    <div class="menu-content" id="menu-content">
+                        <nav class="main-menu">
+                            <ul class="main-menu-list">
+                                <li><a href="#created-webs" onclick="openCloseMenu()">Webs Creadas</a></li>
+                                <li><a href="#testimonials" onclick="openCloseMenu()">Testimonios</a></li>
+                                <li><a href="#all-services" onclick="openCloseMenu()">Todos los Servicios</a></li>
+                                <li><a href="#meeting-schedule" onclick="openCloseMenu()">Contácto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="opacity-layer"></div>
+            </div>
+        </header>
+
+        <main>
+            <!-- BANNER -->
+            <section class="banner">
+                <div class="banner-content">
+                    <h1 class="title title--big">
+                        Diseño web que convierte y fideliza a los clientes de tu negocio
+                    </h1>
+                    <a href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento">
+                        <button href="" class="button banner-button">Obtener presupuesto para tu web</button>
+                    </a>
+                </div>
+                <div class="banner-visuals">
+                    <img class="banner-img" src="./assets/page-2.png" alt="">
+                </div>
+            </section>
+
+            <!-- PORTFOLIO WEBS -->
+            <section class="normal-section" id="created-webs">
+                <div class="normal-section--title">
+                    <h2>Algunas webs que hemos creado</h2>
+                </div>
+                <div class="portfolio-webs">
+                    <div class="portfolio-web">
+                        <img src="./assets/portfolio/frio-antakira.png" alt="">
+                        <p>Transportes <b>Frío Antakira</b></p>
+                    </div>
+                    <div class="portfolio-web">
+                        <img src="./assets/portfolio/bleckin.png" alt="">
+                        <p><b>Bleckin</b>, comunidad alrededor de las criptomonedas</p>
+                    </div>
+                    <div class="portfolio-web">
+                        <img src="./assets/page-1.png" alt="">
+                        <p>Página web de restaurante <b>Aranda</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <!--CLIENTS REVIEW-->
+            <section class="normal-section" id="testimonials">
+                <div class="normal-section--title">
+                    <h2>¿Qué opinan nuestros clientes?</h2>
+                </div>
+                <div class="clients">
+                    <div class="client-review">
+                        <div class="testimonial">
+                            <!-- <img class="testimonial-person" src="./assets/person.webp" alt=""> -->
+                            <h3>Restaurante Aranda</h3>
+                            <p>
+                                Tanto la web como el trato fueron increíbles, tardaron menos de 2 semanas en posicionar la web. También me asesoraron con la estrategia de ventas que me está funcionando actualmente.
+                            </p>
+                        </div>
+                        <!-- <img class="testimonial-web" src="./assets/page-1.png" alt=""> -->
+                    </div>
+                    <div class="reviews-selection">
+                        <button onclick="moveBack()" class="vertical-flip">
+                            <img src="./assets/arrow-icon.png" alt="">
+                        </button>
+                        <div class="reviews-circles">
+                            <!-- <div class="unselected-review"></div> -->
+                        </div>
+                        <button onclick="moveForward()">
+                            <img src="./assets/arrow-icon.png" alt="">
+                        </button>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--SERVICES-->
+            <section class="normal-section" id="all-services">
+                <div class="normal-section--title">
+                    <h2>¿Qué otros servicios ofrecemos?</h2>
+                    <p class="title-p">
+                        Una página bonita no es suficiente para resaltar sobre tus competidores, 
+                        necesitas una estrategia de crecimiento que te permita ganar clientes de manera contínua en el medio online.
+                    </p>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <h1>Diseño y Desarrollo Web</h1>
+                        <div class="service-info">
+                            <p>Optimizadas para cumplir el objetivo online de tu negocio</p>
+                            <br/><a href="#meeting-schedule">Obtener más información</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h1>Google My Business</h1>
+                        <div class="service-info">
+                            <p>Asegúrate de mostrarte en las primeras posiciones de google maps cuando alguien busca un servicio como el tuyo por tu zona</p>
+                            <br/><a href="#meeting-schedule">Obtener más información</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h1>Publicidad Online</h1>
+                        <div class="service-info">
+                            <p>Haz crecer tu negocio ampliando tu base de clientes</p>
+                            <br/><a href="#meeting-schedule">Obtener más información</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <h1>Consultoría estratégica</h1>
+                        <div class="service-info">
+                            <p>Descubre qué servicio es el mejor para tu situación actual</p>
+                            <br/><a href="#meeting-schedule">Obtener más información</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer class="main-footer">
+
+            <div class="footer-content">
+                <h1>Sobre XS Design</h1>
+                <br/>
+                <p>Nuestro negocio se basa en la stisfacción de nuestros clientes, si no quedas satisfecho prometemos devolverte el 100% del costo del servicio.</p>
+                <br/>
+                <p>Siempre intentamos superar en el ámbito digital a toda competencia cercana.</p>
+                <br/>
+                <p>El precio mínimo por cualquiera de nuestros servicios es de 500€, en su forma más básica. A exepción de la consultoría que son 50€/hora.</p>
+                <br/>
+                <p>Desarrollamos y diseñamos webs con pasión, que al no encontrarse en casi ninguna agencia, nos permite el crear webs de calidad bastante superior a la media.</p>
+            </div>
+
+            <div class="meeting-schedule">
+                <img class="footer-header-logo" src="assets/xsmarketing-logo.png" id="meeting-schedule">
+                <h2 style="margin-top:40px">¿Te has quedado con alguna duda? Reserva tu llamada para obtener más información</h2> <br/>
+                <a href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento"> <button href="" class="button footer-button">Agendar llamada de descubrimiento</button></a>
+            </div>
+            
+        </footer>
+        <div class="legal-stuff"> Todos los derechos reservados</div>
+    </div>
+
+    <script src="./js/toggleMenu.js"></script>
+    <script src="./js/elementsMove.js"></script>
+    <script src="./js/testimonialSlider.js"></script>
+</body>
+</html>

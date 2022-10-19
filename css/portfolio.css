@@ -1,0 +1,32 @@
+
+.portfolio-webs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+.portfolio-web {
+    width: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.portfolio-web img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: .4s;
+}
+.portfolio-web img:hover {
+    transform: scale(1.06);
+}
+.portfolio-web p {
+    margin: 20px 0 0 10px;
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+    .portfolio-webs {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+}
