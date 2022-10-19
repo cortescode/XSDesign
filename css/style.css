@@ -109,10 +109,10 @@ p {
 }
 
 .button {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    padding: 16px 32px;
+    padding: 12px 20px;
     background: linear-gradient(to right,#007fbd, #004d73);
     color: white;
     border-radius: 28px;
