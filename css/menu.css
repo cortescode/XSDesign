@@ -58,12 +58,12 @@
 }
 .main-menu-list li {
     list-style: none;
-    margin: 14px;
-    padding: 6px;
+    margin: 4px;
+    padding: 12px;
     transition: .2s;
 }
 .main-menu-list li:hover {
-    transform: scale(1.1);
+    background-color: aliceblue;
 }
 .main-menu-list li:hover a{
     color: #007fbd;
