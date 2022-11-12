@@ -1,0 +1,73 @@
+#how-we-work {
+    background-image: url("../assets/web-img.jpg");
+    /* background: linear-gradient(to right, rgb(23, 0, 88), rgb(1, 0, 53)); */
+    background-size: cover;
+    padding: 40px 0 40px 0;
+}
+#how-we-work .normal-section--title {
+    color: white;
+    margin: 40px 0 0px 0;
+    padding-bottom: 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-areas: 
+    "step1 ."
+    "step1 step2"
+    "step3 step2" 
+    "step3 step4"
+    ". step4";
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+}
+
+.step {
+    max-width: 80%;
+    box-shadow: rgba(0, 153, 255, 0.596) 2px 4px 20px -16px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 24px;
+    margin: 10px 0 10px 0;
+    max-width: 400px;
+}
+
+.step .title{
+}
+
+
+.step:nth-of-type(1) {
+    grid-area: step1;
+    justify-self: right;
+}
+  
+.step:nth-of-type(2) {
+    grid-area: step2;
+}
+
+  
+.step:nth-of-type(3) {
+    grid-area: step3;
+    justify-self: right;
+}
+
+.step:nth-of-type(4) {
+    grid-area: step4;
+}
+  
+
+.step-info {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) and (orientation: portrait) {
+    .steps {
+        display: grid;
+        grid-template-areas: "step1" "step2" "step3" "step4";
+        padding: 20px;
+    }
+}

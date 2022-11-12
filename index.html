@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cmarketing - Agencia de Diseño web Almería</title>
+    <title>XS Design - Diseño web y Marketing digital en Almería</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/clients.css">
@@ -12,14 +12,19 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/steps.css">
 </head>
 <body>
+    <div id="particle-background"></div>
     <div class="full-page-containter">
         <!--HEADER-->
-        <header>
+        <header id="header">
             <div class="header-wrapper">
                 <a href="#" class="logo-wrapper">
-                    <img class="header-logo" src="assets/xsmarketing-logo.png"></img>
+                    <img class="header-logo" src="assets/logo3.png"></img>
+                    <h1>XS Design</h1>
                 </a>
                 <div class="menu-wrapper">
                     <button onclick="openCloseMenu()" class="menu-button">
@@ -28,10 +33,12 @@
                     <div class="menu-content" id="menu-content">
                         <nav class="main-menu">
                             <ul class="main-menu-list">
-                                <li><a href="#created-webs" onclick="openCloseMenu()">Webs Creadas</a></li>
                                 <li><a href="#testimonials" onclick="openCloseMenu()">Testimonios</a></li>
+                                <li><a href="#created-webs" onclick="openCloseMenu()">Webs Creadas</a></li>
                                 <li><a href="#all-services" onclick="openCloseMenu()">Todos los Servicios</a></li>
                                 <li><a href="#meeting-schedule" onclick="openCloseMenu()">Contácto</a></li>
+                                <li><a href="#about-us" onclick="openCloseMenu()">Sobre nosotros</a></li>
+                                <li><a href="#how-we-work" onclick="openCloseMenu()">Cómo trabajamos</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -44,20 +51,19 @@
             <!-- BANNER -->
             <section class="banner">
                 <div class="banner-content">
-                    <h1 class="title title--big">
+                    <h1 class="title banner-title">
                         Diseño web que convierte y fideliza a los clientes de tu negocio
                     </h1>
-                    <a href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento">
-                        <button href="" class="button banner-button">Obtener presupuesto para tu web</button>
+                    <a 
+                    href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento" 
+                    class="main-button" role="button">
+                        Obtener presupuesto para tu web
                     </a>
-                </div>
-                <div class="banner-visuals">
-                    <img class="banner-img" src="./assets/page-2.png" alt="">
                 </div>
             </section>
 
             <!-- PORTFOLIO WEBS -->
-            <section class="normal-section" id="created-webs">
+            <section class="normal-section portfolio-section" id="created-webs">
                 <div class="normal-section--title">
                     <h2>Algunas webs que hemos creado</h2>
                 </div>
@@ -73,6 +79,98 @@
                     <div class="portfolio-web">
                         <img src="./assets/page-1.png" alt="">
                         <p>Página web de restaurante <b>Aranda</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT US -->
+            <section class="normal-section" id="about-us">
+                <div class="normal-section--title">
+                    <h2>Descubre más sobre nosotros</h2>
+                </div>
+                <div class="about-us">
+                    <div class="about-us__content">
+                        <h3>Sobre XS Design</h3>
+                        <p>
+                            XS Design es una nueva empresa dedica a aumentar la facturación de
+                            tu negocio local mediante la creación y/u optimización de tu página web,
+                            el lugar donde atiendes a tus posibles clientes dentro de internet. Además 
+                            de ofrecer una serie de servicios de marketing digital para aumentar el 
+                            tráfico de la misma y, con ello, tus clientes y facturación.
+                            </br></br>
+                            Lo que nos diferencia del resto de agencias es que no solo somos profesionales 
+                            en diseño web y marketing digital, sino también en obtener datos para analizarlos y 
+                            convertirlos en información altamente relevante para su negocio, permitiendo
+                            así expandir sin precedentes los límites y el crecimiento del mismo.
+                            </br></br>
+                        </p>
+                        <button class="main-button">¿Hablamos?</button>
+                    </div>
+                    <div class="about-us__graphics">
+                        <img src="./assets/shop_laptop_w.jpg" alt="">
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Steps -->
+            <section class="normal-section" id="how-we-work">
+                <div class="normal-section--title">
+                    <h2>¿Cómo trabajamos el diseño de tu página web</h2>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step--titile">
+                            <h1>Paso 1</h1>
+                        </div>
+                        <div class="step-info">
+                            <p>
+                                Comenzamos con un buen café donde nos transmites la historia, 
+                                los detalles, la visión, valores, filosofía de tu marca y todos 
+                                los requisitos técnicos que quieres que tenga tu página web.
+                            </p>
+                        </div>
+                    </div>
+                        
+                    <div class="step">
+                        <div class="step--titile">
+                            <h1>Paso 2</h1>
+                        </div>
+                        <div class="step-info">
+                            <p>
+                                Justo después, enviamos la idea a nuestro equipo para que pasemos 
+                                a la acción. Empezamos a crear un primer diseño, en cuestión de días 
+                                estará listo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step--titile">
+                            <h1>Paso 3</h1>
+                        </div>
+                        <div class="step-info">
+                            <p>
+                                Una semana mas tarde obtendrás una primera versión de la web, para que 
+                                puedas decirnos todo lo que no te gusta, los cambios que quieres hacerle 
+                                y nos pondremos de acuerdo para crear un diseño o web optimizado, que a 
+                                su vez esté 100% a su gusto.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step--titile">
+                            <h1>Paso 4</h1>
+                        </div>
+                        <div class="step-info">
+                            <p>
+                                Una semana mas tarde, la segunda desde la primera reunión, te entregamos la 
+                                última versión de tu web, realizamos los unos últimos retoques si lo 
+                                consideras necesario; y procemos a lanzar tu sitio web.
+                                 
+                                En cuestión de 2 semanas tendrás un sitio web optimizado y, lo que es más 
+                                importante, que convierta visitantes en clientes.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -114,7 +212,7 @@
                     <h2>¿Qué otros servicios ofrecemos?</h2>
                     <p class="title-p">
                         Una página bonita no es suficiente para resaltar sobre tus competidores, 
-                        necesitas una estrategia de crecimiento que te permita ganar clientes de manera contínua en el medio online.
+                        necesitas una estrategia de crecimiento que te permita ganar clientes de manera continua en el medio online.
                     </p>
                 </div>
                 <div class="services">
@@ -166,9 +264,12 @@
             </div>
 
             <div class="meeting-schedule">
-                <img class="footer-header-logo" src="assets/xsmarketing-logo.png" id="meeting-schedule">
+                <a href="#" class="logo-wrapper">
+                    <img class="header-logo" src="assets/logo3.png"></img>
+                    <h1>XS Design</h1>
+                </a>
                 <h2 style="margin-top:40px">¿Te has quedado con alguna duda? Reserva tu llamada para obtener más información</h2> <br/>
-                <a href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento"> <button href="" class="button footer-button">Agendar llamada de descubrimiento</button></a>
+                <a href="https://calendly.com/rocket_marketing/videollamada-de-descubrimiento" class="main-button" role="button">Agendar llamada de descubrimiento</a>
             </div>
             
         </footer>
@@ -176,7 +277,7 @@
     </div>
 
     <script src="./js/toggleMenu.js"></script>
-    <script src="./js/elementsMove.js"></script>
     <script src="./js/testimonialSlider.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

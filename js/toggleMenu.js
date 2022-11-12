@@ -4,6 +4,7 @@ const opacityLayer = document.querySelector(".opacity-layer");
 
 let isClicked = false;
 
+
 // This function is called when html button is pressed
 function openCloseMenu () {
     const menu = document.getElementById("menu-content");
@@ -25,6 +26,7 @@ function openCloseMenu () {
     }
 }
 
+// Draw the button appareance depending if is pressed or it isn't
 function drawCanvas() {
 
     if(canvas.getContext) {

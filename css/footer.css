@@ -4,7 +4,7 @@
     gap: 80px;
     place-items: center;
     min-height: 90vh;
-    background-color: #007fbd;
+    background-color: #00124e;
     padding: 80px 80px;
     color: white;
 }
@@ -42,6 +42,9 @@
 .footer-button {
     margin-top: 40px;
     color: white;
+}
+.meeting-schedule {
+    text-align: center;
 }
 
 @media (max-width: 600px) and (orientation: portrait){

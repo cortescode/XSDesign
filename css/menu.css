@@ -1,24 +1,30 @@
 
 .menu-wrapper {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     padding: 0;
     margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.menu-wrapper:hover {
+    box-shadow: #0b006c8e 0px 0px 8px;
 }
 .menu-button {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
     position: relative;
     z-index: 25;
     border: none;
-    padding: 0;
     margin: 0;
     background-color: rgba(255, 255, 255, 0);
     position: fixed;
     transition: .2s;
 }
 .menu-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .menu-button:active {
     transform: scale(.6);
@@ -54,7 +60,7 @@
 }
 
 .main-menu {
-    font-size: 18px;
+    font-size: 16px;
 }
 .main-menu-list li {
     list-style: none;
@@ -68,8 +74,11 @@
 .main-menu-list li:hover a{
     color: #007fbd;
     text-decoration: none;
-    cursor: default;
 }
+.main-menu-list a:hover {
+    cursor: pointer;
+}
+
 
 .main-menu-list li a{
     color: #00334e;

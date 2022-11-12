@@ -10,6 +10,10 @@ Color Palette:
 #dbebfa
 */
 
+:root {
+    --main-color: black;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +21,7 @@ Color Palette:
 }
 
 html {
-    background: linear-gradient(to right, #ffffff, #dbebfa);
+    background: linear-gradient(to right, #ffffff, #ecf1f7);
     max-width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -36,7 +40,7 @@ h1, h2, h3 {
 
 
 header {
-    background: white;
+    background: transparent;
     position: fixed;
     top: 0;
     right: 0;
@@ -45,13 +49,17 @@ header {
     z-index: 15;
 }
 
+.sticky-header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    box-shadow: rgba(100, 100, 111, 0.159) 0px 7px 16px 0px;
+}
+
 .header-wrapper {
-    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 32px;
-    box-shadow: rgba(100, 100, 111, 0.159) 0px 7px 16px 0px;
 }
 
 .logo-wrapper {
@@ -59,19 +67,28 @@ header {
     align-items: center;
     text-decoration: none;
 }
-
-.logo-text {
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 10px;
-    line-height: 1.2em;
-    color: #007fbd;
+.logo-wrapper h1 {
+    margin-left: 20px;
+    margin-bottom: -4px;
+    font-size: 22px;
+    color: white;
+    text-shadow: #00334e 0 0 10px;
+}
+.sticky-header .logo-wrapper h1 {
+    margin-left: 20px;
+    margin-bottom: -4px;
+    font-size: 22px;
+    color: #00334e;
+    text-shadow: #00334e00 0 0 10px;
 }
 
+
 .header-logo {
-    height: 28px;
+    height: 40px;
     margin: 0;
     padding: 0;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
 }
 
 
@@ -83,14 +100,20 @@ header {
 
 main {
     z-index: 9;
+    max-width: 100vw;
 }
 
 main > section {
-    margin-top: 40px;
-    padding: 80px 40px;
+    margin: 40px 0 40px 0;
+    padding: 40px 40px;
     display: grid;
+    place-items: center;
 }
 
+
+h1, h2, h3 {
+    font-weight: 900;
+}
 
 h1 {
     max-width: 100%;
@@ -107,6 +130,12 @@ p {
     line-height: 1.2em;
     font-weight: bolder;
     color: #00334e;
+}
+
+.normal-section--title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #007fbd;
+    text-align: center;
 }
 
 .button {
@@ -135,6 +164,9 @@ p {
     text-decoration: none;
     cursor: default;
 }
+
+
+
 
 
 
