@@ -40,7 +40,8 @@ h1, h2, h3 {
 
 
 header {
-    background: transparent;
+    background-color: #00124e6a;
+    backdrop-filter: blur(16px);
     position: fixed;
     top: 0;
     right: 0;
@@ -50,7 +51,7 @@ header {
 }
 
 .sticky-header {
-    background: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
     backdrop-filter: blur(16px);
     box-shadow: rgba(100, 100, 111, 0.159) 0px 7px 16px 0px;
 }
@@ -168,18 +169,16 @@ p {
 
 
 
-
-
 .legal-stuff {
     font-size: 12px;
-    text-align: right;
-    background-color: #004d73;
+    text-align: center;
+    background-color: #000432;
     padding: 10px;
     color: white;
 }
 
 
-@media (max-width: 600px) and (orientation: portrait){
+@media (max-width: 720px) and (orientation: portrait){
     html {
         width: 100vw;
         overflow-x: hidden;

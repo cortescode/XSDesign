@@ -33,12 +33,12 @@
                     <div class="menu-content" id="menu-content">
                         <nav class="main-menu">
                             <ul class="main-menu-list">
-                                <li><a href="#testimonials" onclick="openCloseMenu()">Testimonios</a></li>
                                 <li><a href="#created-webs" onclick="openCloseMenu()">Webs Creadas</a></li>
-                                <li><a href="#all-services" onclick="openCloseMenu()">Todos los Servicios</a></li>
-                                <li><a href="#meeting-schedule" onclick="openCloseMenu()">Contácto</a></li>
                                 <li><a href="#about-us" onclick="openCloseMenu()">Sobre nosotros</a></li>
                                 <li><a href="#how-we-work" onclick="openCloseMenu()">Cómo trabajamos</a></li>
+                                <li><a href="#testimonials" onclick="openCloseMenu()">Testimonios</a></li>
+                                <li><a href="#all-services" onclick="openCloseMenu()">Todos los Servicios</a></li>
+                                <li><a href="#meeting-schedule" onclick="openCloseMenu()">Contácto</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -47,9 +47,14 @@
             </div>
         </header>
 
+
+        <!-- PAGE CONTENT -->
+
         <main>
+
             <!-- BANNER -->
-            <section class="banner">
+
+            <section class="banner" id="banner">
                 <div class="banner-content">
                     <h1 class="title banner-title">
                         Diseño web que convierte y fideliza a los clientes de tu negocio
@@ -60,9 +65,13 @@
                         Obtener presupuesto para tu web
                     </a>
                 </div>
+                <div class="banner-visuals">
+                    <img src="assets/banners/banner-image.png" alt="">
+                </div>
             </section>
 
             <!-- PORTFOLIO WEBS -->
+
             <section class="normal-section portfolio-section" id="created-webs">
                 <div class="normal-section--title">
                     <h2>Algunas webs que hemos creado</h2>
@@ -84,6 +93,7 @@
             </section>
 
             <!-- ABOUT US -->
+
             <section class="normal-section" id="about-us">
                 <div class="normal-section--title">
                     <h2>Descubre más sobre nosotros</h2>
@@ -107,13 +117,14 @@
                         <button class="main-button">¿Hablamos?</button>
                     </div>
                     <div class="about-us__graphics">
-                        <img src="./assets/shop_laptop_w.jpg" alt="">
+                        <img src="./assets/info-img.png" alt="">
                     </div>
                 </div>
                 
             </section>
 
             <!-- Steps -->
+
             <section class="normal-section" id="how-we-work">
                 <div class="normal-section--title">
                     <h2>¿Cómo trabajamos el diseño de tu página web</h2>
@@ -263,8 +274,8 @@
                 <p>Desarrollamos y diseñamos webs con pasión, que al no encontrarse en casi ninguna agencia, nos permite el crear webs de calidad bastante superior a la media.</p>
             </div>
 
-            <div class="meeting-schedule">
-                <a href="#" class="logo-wrapper">
+            <div class="meeting-schedule" id="meeting-schedule">
+                <a href="#banner" class="logo-wrapper">
                     <img class="header-logo" src="assets/logo3.png"></img>
                     <h1>XS Design</h1>
                 </a>

@@ -14,7 +14,7 @@
   display: inline-block;
   flex-direction: row;
   flex-shrink: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   justify-content: center;
   margin: 60px 0 0 0;
@@ -33,13 +33,10 @@
   width: auto;
   word-break: keep-all;
   z-index: 0;
-  max-width: 320px;
 }
 
-@media (min-width: 768px) {
-  .main-button {
-    padding: 19px 32px;
-  }
+.main-button {
+  padding: 19px 32px;
 }
 
 .main-button:before,

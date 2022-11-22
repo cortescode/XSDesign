@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); 
+
 .banner {
     display: grid;
     place-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #00000000, #dbebfa);
-    background-image: url("../assets/banners/3305937.jpg");
+    height: 620px;
+    background: #00124e;
+    /* background-image: url("../assets/banners/3305937.jpg"); */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     margin-top: 0;
+    padding: 40px 40px 0px 40px;
 }
 .banner-content {
     display: block;
-    max-width: 460px;
+    max-width: 720px;
+    padding-top: 120px;
 }
 .banner-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 46px;
     color: white;
+    font-family: 'Abril Fatface';
+    font-weight: 900;
+    letter-spacing: 4px;
 }
 .banner-content .main-button {
     margin-top: 0px;
+}
+
+.banner-visuals {
+    margin-top: 100px;
+    margin-bottom: -40px;
+}
+.banner-visuals img {
+    max-width: 450px;
 }
 
 @media (max-width: 600px) and (orientation: portrait){
