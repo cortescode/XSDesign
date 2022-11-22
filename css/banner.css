@@ -42,4 +42,10 @@
     .banner {
         grid-template-columns: 1fr;
     }
+    .banner-title {
+        font-size: 38px;
+    }
+    .banner-visuals img {
+        max-width: 100%;
+    }
 }
