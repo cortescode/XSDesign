@@ -41,9 +41,10 @@
 @media (max-width: 600px) and (orientation: portrait){
     .banner {
         grid-template-columns: 1fr;
+        height: 100vh;
     }
     .banner-title {
-        font-size: 38px;
+        font-size: 32px;
     }
     .banner-visuals img {
         max-width: 100%;
