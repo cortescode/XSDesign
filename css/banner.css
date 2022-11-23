@@ -3,7 +3,6 @@
 .banner {
     display: grid;
     place-items: center;
-    height: 620px;
     background: #00124e;
     /* background-image: url("../assets/banners/3305937.jpg"); */
     background-size: cover;
@@ -41,10 +40,18 @@
 @media (max-width: 600px) and (orientation: portrait){
     .banner {
         grid-template-columns: 1fr;
-        height: 100vh;
+        height: auto;
+        padding: 20px 20px 0 20px;
+    }
+    .banner-content {
+        text-align: right;
+    }
+    .banner-content .main-button {
+        margin-top: 60px;
     }
     .banner-title {
         font-size: 32px;
+        text-align: left;
     }
     .banner-visuals img {
         max-width: 100%;
