@@ -1,7 +1,5 @@
 #how-we-work {
-    background-image: url("../assets/web-img.jpg");
-    /* background: linear-gradient(to right, rgb(23, 0, 88), rgb(1, 0, 53)); */
-    background-size: cover;
+    background: linear-gradient(60deg, #00FFD1, #5200FF);
     padding: 40px 0 40px 0;
 }
 #how-we-work .normal-section--title {

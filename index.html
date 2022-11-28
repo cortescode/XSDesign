@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./css/buttons.css">
     <link rel="stylesheet" href="./css/aboutUs.css">
     <link rel="stylesheet" href="./css/steps.css">
+
+    <link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
     <div id="particle-background"></div>
@@ -28,7 +30,7 @@
         <!--HEADER-->
         <header id="header">
             <div class="header-wrapper">
-                <a href="#" class="logo-wrapper">
+                <a href="#" class="logo-wrapper hidden">
                     <img class="header-logo" src="assets/logo3.png"></img>
                     <h1>XS Design</h1>
                 </a>
@@ -61,7 +63,7 @@
             <!-- BANNER -->
 
             <section class="banner" id="banner">
-                <div class="banner-content">
+                <div class="banner-content hidden">
                     <h1 class="title banner-title">
                         Diseño Web Profesional en tiempo record.
                         <!-- Otros copys interesantes
@@ -76,7 +78,7 @@
                         Obtener presupuesto para tu web
                     </a>
                 </div>
-                <div class="banner-visuals">
+                <div class="banner-visuals hidden">
                     <img src="assets/banners/banner-image.png" alt="">
                 </div>
             </section>
@@ -84,19 +86,19 @@
             <!-- PORTFOLIO WEBS -->
 
             <section class="normal-section portfolio-section" id="created-webs">
-                <div class="normal-section--title">
+                <div class="normal-section--title hidden">
                     <h2>Algunas webs que hemos creado</h2>
                 </div>
                 <div class="portfolio-webs">
-                    <div class="portfolio-web">
+                    <div class="portfolio-web hidden">
                         <img src="./assets/portfolio/frio-antakira.png" alt="">
                         <p>Transportes <b>Frío Antakira</b></p>
                     </div>
-                    <div class="portfolio-web">
+                    <div class="portfolio-web hidden">
                         <img src="./assets/portfolio/bleckin.png" alt="">
                         <p><b>Bleckin</b>, comunidad alrededor de las criptomonedas</p>
                     </div>
-                    <div class="portfolio-web">
+                    <div class="portfolio-web hidden">
                         <img src="./assets/page-1.png" alt="">
                         <p>Página web de restaurante <b>Aranda</b></p>
                     </div>
@@ -106,11 +108,11 @@
             <!-- ABOUT US -->
 
             <section class="normal-section" id="about-us">
-                <div class="normal-section--title">
+                <div class="normal-section--title hidden">
                     <h2>Descubre más sobre nosotros</h2>
                 </div>
-                <div class="about-us">
-                    <div class="about-us__content">
+                <div class="about-us ">
+                    <div class="about-us__content hidden">
                         <h3>Sobre XS Design</h3>
                         <p>
                             XS Design es una nueva empresa dedica a aumentar la facturación de
@@ -127,7 +129,7 @@
                         </p>
                         <button class="main-button">¿Hablamos?</button>
                     </div>
-                    <div class="about-us__graphics">
+                    <div class="about-us__graphics hidden">
                         <img src="./assets/info-img.png" alt="">
                     </div>
                 </div>
@@ -137,11 +139,11 @@
             <!-- Steps -->
 
             <section class="normal-section" id="how-we-work">
-                <div class="normal-section--title">
+                <div class="normal-section--title hidden">
                     <h2>¿Cómo trabajamos el diseño de tu página web</h2>
                 </div>
                 <div class="steps">
-                    <div class="step">
+                    <div class="step hidden">
                         <div class="step--titile">
                             <h1>Paso 1</h1>
                         </div>
@@ -154,7 +156,7 @@
                         </div>
                     </div>
                         
-                    <div class="step">
+                    <div class="step hidden">
                         <div class="step--titile">
                             <h1>Paso 2</h1>
                         </div>
@@ -166,7 +168,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step hidden">
                         <div class="step--titile">
                             <h1>Paso 3</h1>
                         </div>
@@ -179,7 +181,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step hidden">
                         <div class="step--titile">
                             <h1>Paso 4</h1>
                         </div>
@@ -195,15 +197,16 @@
                         </div>
                     </div>
                 </div>
+                
             </section>
 
             <!--CLIENTS REVIEW-->
             <section class="normal-section" id="testimonials">
-                <div class="normal-section--title">
+                <div class="normal-section--title hidden">
                     <h2>¿Qué opinan nuestros clientes?</h2>
                 </div>
                 <div class="clients">
-                    <div class="client-review">
+                    <div class="client-review hidden">
                         <div class="testimonial">
                             <!-- <img class="testimonial-person" src="./assets/person.webp" alt=""> -->
                             <h3>Restaurante Aranda</h3>
@@ -213,7 +216,7 @@
                         </div>
                         <!-- <img class="testimonial-web" src="./assets/page-1.png" alt=""> -->
                     </div>
-                    <div class="reviews-selection">
+                    <div class="reviews-selection hidden">
                         <button onclick="moveBack()" class="vertical-flip">
                             <img src="./assets/arrow-icon.png" alt="">
                         </button>
@@ -224,13 +227,14 @@
                             <img src="./assets/arrow-icon.png" alt="">
                         </button>
                     </div>
-                    
                 </div>
+
+                <button class="main-button">Obtén presupuesto para tu web</button>
             </section>
 
             <!--SERVICES-->
             <section class="normal-section" id="all-services">
-                <div class="normal-section--title">
+                <div class="normal-section--title hidden">
                     <h2>¿Qué otros servicios ofrecemos?</h2>
                     <p class="title-p">
                         Una página bonita no es suficiente para resaltar sobre tus competidores, 
@@ -238,7 +242,7 @@
                     </p>
                 </div>
                 <div class="services">
-                    <div class="service">
+                    <div class="service hidden">
                         <h1>Diseño y Desarrollo Web</h1>
                         <img class="service-image" src="./assets/service-images/5.png" alt="">
                         <div class="service-info">
@@ -246,7 +250,7 @@
                             <br/><a href="#meeting-schedule">Obtener más información</a>
                         </div>
                     </div>
-                    <div class="service">
+                    <div class="service hidden">
                         <h1>Google My Business</h1>
                         <img class="service-image" src="./assets/service-images/6.png" alt="">
                         <div class="service-info">
@@ -254,7 +258,7 @@
                             <br/><a href="#meeting-schedule">Obtener más información</a>
                         </div>
                     </div>
-                    <div class="service">
+                    <div class="service hidden">
                         <h1>Publicidad Online</h1>
                         <img class="service-image" src="./assets/service-images/7.png" alt="">
                         <div class="service-info">
@@ -262,7 +266,7 @@
                             <br/><a href="#meeting-schedule">Obtener más información</a>
                         </div>
                     </div>
-                    <div class="service">
+                    <div class="service hidden">
                         <h1>Consultoría estratégica</h1>
                         <img class="service-image" src="./assets/service-images/8.png" alt="">
                         <div class="service-info">
@@ -277,7 +281,7 @@
         <!--FOOTER-->
         <footer class="main-footer">
 
-            <div class="footer-content">
+            <div class="footer-content hidden">
                 <h1 class="footer-title">Sobre XS Design</h1>
                 <br/>
                 <p>Nuestro negocio se basa en la stisfacción de nuestros clientes, si no quedas satisfecho prometemos devolverte el 100% del costo del servicio.</p>
@@ -289,7 +293,7 @@
                 <p>Desarrollamos y diseñamos webs con pasión, que al no encontrarse en casi ninguna agencia, nos permite el crear webs de calidad bastante superior a la media.</p>
             </div>
 
-            <div class="meeting-schedule" id="meeting-schedule">
+            <div class="meeting-schedule hidden" id="meeting-schedule">
                 <a href="#banner" class="logo-wrapper">
                     <img class="header-logo" src="assets/logo3.png"></img>
                     <h1>XS Design</h1>
@@ -305,5 +309,6 @@
     <script src="./js/toggleMenu.js"></script>
     <script src="./js/testimonialSlider.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 </html>

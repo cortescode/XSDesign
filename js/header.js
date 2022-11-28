@@ -3,8 +3,6 @@ const header = document.getElementById("header");
 let headerPos = header.offsetTop; // Header position respect to top
 
 
-
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
     onScrollDisplay();

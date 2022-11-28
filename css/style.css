@@ -199,6 +199,8 @@ p {
     }
     .header-wrapper {
         height: 64px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .title {
