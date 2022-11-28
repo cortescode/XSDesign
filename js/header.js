@@ -12,7 +12,7 @@ window.onscroll = function() {
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function onScrollDisplay() {
-    const scrollDistanceSensibility = window.pageYOffset-620;
+    const scrollDistanceSensibility = window.pageYOffset-600;
 
     if (scrollDistanceSensibility > headerPos) {
         header.classList.add("sticky-header");
